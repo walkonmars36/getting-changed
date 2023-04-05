@@ -80,7 +80,6 @@ ul {
 
 .social-icons {
   display: flex;
-  width: 25%;
   justify-content: space-between;
   margin-right: 2rem;
 }
@@ -91,6 +90,12 @@ ul {
   font-size: clamp(1.2rem, 0.871rem + 1.315vw, 2.133rem);
   margin-right: 1rem;
   color: white;
+}
+
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-at:hover {
+  color: #72e1d1;
 }
 
 @media (min-width: 600px) {
