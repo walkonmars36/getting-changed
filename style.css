@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #060b0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c5c6c7;
+  font-family: "Space Grotesk", sans-serif;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: clamp(3.2rem, 1.322rem + 7.512vw, 8.533rem);
+  line-height: 1;
+  color: #72e1d1;
+}
+
+p {
+  font-size: clamp(1.2rem, 0.871rem + 1.315vw, 2.133rem);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1.5rem;
+  max-width: 75rem;
+}
+
+.mark-img {
+  border-radius: 1rem;
+  justify-self: end;
+}
+
+.h1-span {
+  font-size: clamp(2.133rem, 0.819rem + 5.258vw, 5.867rem);
+  color: #c5c6c7;
+}
+
+.you {
+  margin-top: clamp(2.133rem, 1.758rem + 1.502vw, 3.2rem);
+}
+
+.back-soon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: clamp(3.2rem, 2.449rem + 3.005vw, 5.333rem);
+}
+
+.back-soon__text {
+  line-height: 0.7;
+}
+
+.content::after {
+  content: "";
+  display: inline-block;
+  width: 95%;
+  height: 0.3rem;
+  background: #72e1d1;
+}
+
+.social-icons {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+
+.fa-github,
+.fa-linkedin,
+.fa-at {
+  font-size: clamp(1.2rem, 0.871rem + 1.315vw, 2.133rem);
+  margin-right: 1rem;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .content {
+    width: 65%;
+  }
+  .mark-img {
+    width: 35%;
+  }
+}
