@@ -47,7 +47,8 @@ ul {
 
 .mark-img {
   border-radius: 1rem;
-  justify-self: end;
+  width: 80%;
+  margin: auto;
 }
 
 .h1-span {
@@ -98,7 +99,7 @@ ul {
   color: #72e1d1;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 48rem) {
   .container {
     flex-direction: row-reverse;
     align-items: center;
